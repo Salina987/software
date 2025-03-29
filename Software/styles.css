@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0056b3;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Features */
+#features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px;
+    background: #0056b3;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #003d7a;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+    .feature-box {
+        width: 90%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}

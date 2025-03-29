@@ -1,0 +1,323 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar a.navbar-brand {
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+
+.navbar .btn-primary,
+.navbar .btn-outline-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+.navbar .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.navbar .btn-outline-primary {
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://imgs.search.brave.com/0B7ZF8uJl7g8J-48EzfNi_s6Qh6-zeYQsvC6b_aEcUk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDg3NDYx/MzQuanBn');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+    position: relative;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7), 0px 0px 12px rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
+}
+
+/* Subheading */
+.hero .subheading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(239, 233, 233, 0.8); /* Enhanced shadow for contrast */
+    color: #f5f5f5; /* Light color for better contrast */
+    letter-spacing: 1px; /* Slight spacing for clarity */
+    line-height: 1.4; /* Increased line height for readability */
+}
+
+
+/* Search Bar Container */
+.hero .search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Larger Input Fields */
+.hero .search-bar input {
+    height: 60px;
+    width: 50px; /* Wider input fields for a more spacious look */
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 14px 50px 14px 20px; /* Added padding for icons */
+    border: 2px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Location Input Field */
+.hero .search-bar .location-input {
+    height: 60px;
+    width: 500px; /* Same width as search input */
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 14px 50px 14px 20px; /* Padding for icon inside the input */
+    border: 2px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus Effect */
+.hero .search-bar input:focus, 
+.hero .search-bar .location-input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Icons inside inputs */
+.hero .search-bar i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #007bff;
+}
+
+/* Modern Search Button */
+.hero .search-bar button {
+    height: 60px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 30px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Hover Effect */
+.hero .search-bar button:hover {
+    background: linear-gradient(45deg, #0056b3, #00408a);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Button Focus Effect */
+.hero .search-bar button:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
+}
+
+/* Job Listings */
+.job-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.job-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.job-card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.job-card .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+.job-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Us Section */
+#contact-us {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+#contact-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+}
+#contact-us .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+#contact-us .row {
+    margin-bottom: 30px;
+}
+
+#contact-us .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form Styles */
+form .mb-3 {
+    margin-bottom: 20px;
+}
+
+form .form-label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero .subheading {
+        font-size: 1.2rem;
+    }
+
+    .hero .search-bar input,
+    .hero .search-bar button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .subheading {
+        font-size: 1.1rem;
+    }
+
+    .hero .search-bar input,
+    .hero .search-bar button {
+        width: 90%;
+    }
+}

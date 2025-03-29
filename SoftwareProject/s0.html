@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Portal</title>
+        <link rel="stylesheet" href="s0.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="s0.js"></script>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#home">Jobtale</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Featured">Latest Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="btn btn-primary mx-2" href="#login">Login</a></li>
+                        <li class="nav-item"><a class="btn btn-outline-primary" href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero text-center py-5 bg-light"> <h1 class="fw-bold">Find Your Dream Job</h1>
+            <p class="subheading text-muted">Discover career opportunities that match your skills and passion</p>
+
+            <!-- Search Bar -->
+            <div class="search-bar d-flex justify-content-center mt-3">
+                <input type="text" class="form-control w-25 mx-2" placeholder="Search job">
+                <input type="text" class="form-control w-25 mx-2" placeholder="Location">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </section>
+
+    <!-- Professional Job Listings Section -->
+    <section id="jobs" class="container my-5">
+        <h2 class="text-center mb-4">Featured Job Listings</h2>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Software Engineer</h5>
+                    <p><strong>Company:</strong> Google</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                    <p><i class="fas fa-dollar-sign"></i> $120k - $140k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>UX/UI Designer</h5>
+                    <p><strong>Company:</strong> Microsoft</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+                    <p><i class="fas fa-dollar-sign"></i> $90k - $110k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Data Scientist</h5>
+                    <p><strong>Company:</strong> Tesla</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Austin, TX</p> <p><i class="fas fa-dollar-sign"></i> $130k - $150k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Backend Developer</h5>
+                    <p><strong>Company:</strong> Amazon</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Seattle, WA</p>
+                    <p><i class="fas fa-dollar-sign"></i> $110k - $130k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Project Manager</h5>
+                    <p><strong>Company:</strong> Apple</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cupertino, CA</p>
+                    <p><i class="fas fa-dollar-sign"></i> $110k - $130k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Marketing Specialist</h5>
+                    <p><strong>Company:</strong> Facebook</p>
+                    <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                    <p><i class="fas fa-dollar-sign"></i> $85k - $105k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Product Designer</h5>
+                    <p><strong>Company:</strong> Adobe</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Jose, CA</p>
+                    <p><i class="fas fa-dollar-sign"></i> $100k - $120k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="job-card p-3 shadow-sm">
+                    <h5>Business Analyst</h5>
+                    <p><strong>Company:</strong> IBM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Austin, TX</p>
+                    <p><i class="fas fa-dollar-sign"></i> $95k - $115k / year</p>
+                    <a href="#" class="btn btn-primary w-100">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-outline-primary btn-lg">View More Jobs</a>
+        </div>
+    </section>
+
+    <!-- Latest Job Opportunities Section -->
+    <section id="Featured" class="container mt-5">
+        <h2 class="text-center mb-4">Latest Job Opportunities</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+            <!-- Job Card 1 -->
+            <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>Graphic Designer</h5>
+                    <p><strong>Company:</strong> Company XYZ</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pokhara</p>
+                    <p><strong>Sector:</strong> Creative Design</p>
+                    <p><strong>Availability:</strong> Full-Time</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>Data Analyst</h5>
+                    <p><strong>Company:</strong> Company 123</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lalitpur</p>
+                    <p><strong>Sector:</strong> Data Science</p>
+                    <p><strong>Availability:</strong> Part-Time</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 --> <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>Frontend Developer</h5>
+                    <p><strong>Company:</strong> Tech Solutions</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu</p>
+                    <p><strong>Sector:</strong> Web Development</p>
+                    <p><strong>Availability:</strong> Full-Time</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 4 -->
+            <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>Product Manager</h5>
+                    <p><strong>Company:</strong> Innovative Co.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bhaktapur</p>
+                    <p><strong>Sector:</strong> Management</p>
+                    <p><strong>Availability:</strong> Full-Time</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 5 -->
+            <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>Marketing Specialist</h5>
+                    <p><strong>Company:</strong> Digital World</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu</p>
+                    <p><strong>Sector:</strong> Marketing</p>
+                    <p><strong>Availability:</strong> Contract</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 6 -->
+            <div class="col">
+                <div class="job-card p-4 shadow-lg border-left-5 border-info">
+                    <h5>HR Coordinator</h5>
+                    <p><strong>Company:</strong> Global Enterprises</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu</p>
+                    <p><strong>Sector:</strong> Human Resources</p>
+                    <p><strong>Availability:</strong> Full-Time</p>
+                    <a href="#" class="btn btn-info w-100">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-outline-info btn-lg">View More Jobs</a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+            <h2 class="text-center">About Us</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Our Mission</h4>
+                <p>At Jobtale, our mission is to connect talented individuals with career opportunities that allow them to thrive and succeed. We are committed to providing a platform that enables job seekers to discover their dream jobs while helping employers find the right talent for their needs.</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Our Vision</h4>
+                <p>We envision a world where anyone, regardless of their background, can access fulfilling career opportunities. Our vision is to empower individuals by making job search easy, efficient, and tailored to each person's unique skills and passions.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-md-6">
+                <p>If you have any questions or need further assistance, feel free to reach out to us. Our team is here to help you with any inquiries or supportrequests.</p>
+                <ul>
+                    <li><strong>Email:</strong> contact@jobtale.com</li>
+                    <li><strong>Phone:</strong> +1 234 567 890</li>
+                    <li><strong>Address:</strong> 123 Jobtale Street, City, Country</li>
+                </ul>
+            </div>
+
+            <!-- Right Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>  </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="2" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+            <!-- Footer -->
+            <footer class="bg-dark text-white text-center p-3">
+                <p>&copy; 2025 Jobtale. All rights reserved.</p>
+            </footer>
+    
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
